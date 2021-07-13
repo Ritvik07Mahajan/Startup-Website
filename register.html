@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp-club GCET</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+       
+
+        .container{
+            background-color: darkgray;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightslategray;
+            border-radius: 4px;
+        }    
+
+        .aligncenter {
+            text-align: center;
+            
+        }
+
+        section h2{
+            text-decoration: underline;
+        
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],select,textarea{
+            padding: 12px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            margin:10px
+        }
+        fieldset{
+            background-color: #fff;
+            border:1px solid #ccc;
+        }
+        .main_heading{
+            text-align: center;
+        }
+        input[type="submit"]{
+            background-color:green;
+            padding: 12px 20px;
+            border:none;
+            border-radius: 4px;
+            cursor: pointer;
+            width:50%;
+            border:2px solid black;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover{
+            background-color: #4caf84;
+        }
+
+
+
+
+        </style>
+
+</head>
+<body>
+    <header>
+        <img class="clip-circle" src="logo.png"> <h1>StartUp-Club GCET Jammu</h1>
+
+   <nav>
+       <a href="main.html">Home</a>
+       <a href="core_team.html">Core Team Members</a>
+       <a href="index.php">Register</a>
+       <a href="contact.html">Contect-Us</a>
+       <a href="gallery.html">Gallery</a>
+	   <a href="notice.html">Notice</a>
+
+       <marquee  direction="left">
+        Welcome to the official website of StartUp-club GCET
+        </marquee>
+</nav> 
+
+    </header>
+
+
+<div class="container">
+
+<form id="myForm" method="POST" action="#">
+    <h1 class="main_heading">Registration Form</h1>
+    <p>Enter your Name: *<input type="text" name ="name" required placeholder="Rahul Sharma"></p>
+    <fieldset>
+    <legend>Gender<br><br></legend>
+        <p>
+        Male <input type="radio" name="gender" id="male">
+        Female <input type="radio" name="gender" id="female">
+        Other<input type="radio" name="gender" id="other">
+    </p>
+</fieldset>
+<p>Address:<br>
+     <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your Address here"></textarea></p>
+
+<p>Email: *<input type="email" name="email" id="email" required placeholder="xyz@gmail.com"> </p>
+
+<p>Enter your college Roll number: *<input type="text" required placeholder="GCET\XX\20XX"></p>
+
+<p>Phone Number: *<input type="number" name="phone" id="phone" required placeholder="xxxxxxxxxx"></p>
+<p>Date of Birth: <input type="date" name="DOB" id="DOB"></p>
+<p>Select Branch *
+<select required>
+    <option value="">----Select Your Branch-----</option>
+    <option value="Computer">Computer</option>
+    <option value="ENC">ENC</option>
+    <option value="Electrical">Electrical</option>
+    <option value="Civil">Civil</option>
+    <option value="Mechanical">Mechanical</option>
+    <option value="Barch">B-Arch</option>
+
+</select>
+</p>
+<br>
+<br>
+
+<input type="submit" value="Register" onclick="submit()">
+<br>
+<br>
+
+</form>
+</div>
+
+<footer>
+    <a href="#">FAQ</a>
+       <a href="#">Terms of Use</a>
+       <a href="#">Privacy policy</a>
+       <a href="#">&copy; 2021 StartUp-club</a>
+        <a href="#">About</a>
+
+</footer>
+
+
+<script>
+     
+     function submit()
+     {
+        document.getElementById("myForm").submit();
+     }
+
+</script>
+
+</body>
+</html>
+
+
+
